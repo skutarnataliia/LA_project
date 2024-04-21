@@ -1,9 +1,9 @@
-def read(filepath):
+def read(filepath, n):
 
     file = open(filepath, 'r')
 
     sudoku = []
-    for i in range(9):
+    for i in range(n):
         line = file.readline()
         sudoku.append(list(map(int, line.split())))
     
